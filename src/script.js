@@ -65,9 +65,21 @@ function createMenuItem(item) {
   const itemPrice = document.createElement('p');
   itemPrice.textContent = `Price: ${item.price}`;
 
+  const addToCartBtn = document.createElement('button');
+  addToCartBtn.textContent = 'Esconlher';
+  addToCartBtn.classList.add('button');
+  addToCartBtn.classList.add('button--mustard');
+
+  const buyQuicklyBtn = document.createElement('button');
+  buyQuicklyBtn.textContent = 'Levar logo';
+  buyQuicklyBtn.classList.add('button');
+  buyQuicklyBtn.classList.add('button--coral');
+
   menuItem.appendChild(image);
   menuItem.appendChild(itemName);
   menuItem.appendChild(itemPrice);
+  menuItem.appendChild(addToCartBtn);
+  menuItem.appendChild(buyQuicklyBtn);
 
   return menuItem;
 }
