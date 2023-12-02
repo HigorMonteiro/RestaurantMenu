@@ -63,7 +63,7 @@ function createMenuItem(item) {
   itemName.textContent = item.name;
 
   const itemPrice = document.createElement('p');
-  itemPrice.textContent = `Price: ${item.price}`;
+  itemPrice.textContent = `Preço: R${item.price}`;
 
   const addToCartBtn = document.createElement('button');
   addToCartBtn.textContent = 'Esconlher';
